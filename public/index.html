@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>경기지역화폐 가맹점 지도</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside id="sidebar">
+    <header>
+      <h1>경기지역화폐 가맹점</h1>
+      <p id="notice" hidden></p>
+    </header>
+
+    <div class="filters">
+      <label>지역
+        <select id="sigun"></select>
+      </label>
+      <label>가맹점 유형
+        <select id="type" disabled><option value="">전체</option></select>
+      </label>
+      <label>상호 검색
+        <input id="keyword" type="search" placeholder="상호명 또는 주소">
+      </label>
+      <label class="check">
+        <input id="inView" type="checkbox"> 지도에 보이는 영역만
+      </label>
+    </div>
+
+    <div id="status">지역을 선택하세요.</div>
+    <ul id="list"></ul>
+    <button id="more" hidden>더 보기</button>
+  </aside>
+
+  <main id="map"></main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
