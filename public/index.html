@@ -13,6 +13,7 @@
   <aside id="sidebar">
     <header>
       <h1>경기지역화폐 가맹점</h1>
+      <p id="updated"></p>
       <p id="notice" hidden></p>
     </header>
 
@@ -21,13 +22,13 @@
         <select id="sigun"></select>
       </label>
       <label>가맹점 유형
-        <select id="type" disabled><option value="">전체</option></select>
+        <div class="combo">
+          <input id="type" type="text" placeholder="전체" autocomplete="off" disabled>
+          <ul id="typeOptions" class="combo-list" hidden></ul>
+        </div>
       </label>
       <label>상호 검색
         <input id="keyword" type="search" placeholder="상호명 또는 주소">
-      </label>
-      <label class="check">
-        <input id="inView" type="checkbox"> 지도에 보이는 영역만
       </label>
     </div>
 
