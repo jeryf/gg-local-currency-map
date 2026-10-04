@@ -8,7 +8,7 @@ const OUT_DIR = path.join(ROOT, 'public', 'data');
 const API_KEY = process.env.GG_API_KEY || '';
 const API_URL = 'https://openapi.gg.go.kr/RegionMnyFacltStus';
 const PAGE_SIZE = 1000;
-const CONCURRENCY = 6;
+const CONCURRENCY = 10;
 const RETRIES = 3;
 // 기본 UA로 요청하면 경기데이터드림 보안정책에 차단됨
 const USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
